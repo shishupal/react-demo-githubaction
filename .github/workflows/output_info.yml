@@ -1,0 +1,8 @@
+name: output github context info
+on: workflow_dispatch
+jobs:
+ outputInfo:
+  runs-on: ubuntu-latest
+  steps:
+    - name: github context info
+      run: echo "${{github}}"
